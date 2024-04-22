@@ -1,0 +1,41 @@
+! Минималистичные окна без скевоморфизма
+Xft*antialias: true
+Xft*hinting: true
+Xft*hintstyle: hintslight
+
+! Рамок у окна не должно
+Xterm*borderWidth: 0
+
+! Название окна по середине сверху
+! Убедитесь, что ваш менеджер окон поддерживает это
+*titleBar: false
+*titleFont: -adobe-helvetica-bold-r-*-*-14-*-*-*-*-*-*-*
+*titleForeground: black
+*titleBackground: #cccccc
+*buttonForeground: white
+*buttonBackground: black
+*geometry: +0+0
+*Font: fixed
+
+! Иконка слева от названия окна с отступом 25px
+! Используйте соответствующие команды для вашего менеджера окон
+! Пример для ctwm
+BorderWidth 1
+LeftTitleButton "ICONIFY" f.title.xiconify, f.title.xiconifyicon
+RightTitleButton "DELETE" f.title.xdelete, f.title.xdeleteicon
+TitleFont "-*-*-medium-r-normal--24-*-*-*-*-*-*-*"
+TitleForeground white
+TitleBackground black
+
+! Скругленные углы окон
+*window*cornerSize: 25
+
+! Фокус окна при нажатии на него
+! Для некоторых менеджеров окон это может быть настроено по умолчанию
+! Пример для Openbox
+<focus>
+    <focusNew>yes</focusNew>
+    <followMouse>no</followMouse>
+    <focusLast>yes</focusLast>
+    <underMouse>no</underMouse>
+</focus>
